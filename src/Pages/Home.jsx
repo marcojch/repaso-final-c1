@@ -6,7 +6,7 @@ const Home = () => {
   const {state} = useCharContext()
   return (
     <div>
-      {state.list.map(character => <Card character={character} key={character.id}/>)}
+      {state.list.map(character => <Card icon={'⭐'} character={character} key={character.id}/>)}
     </div>
   )
 }
